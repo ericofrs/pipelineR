@@ -1,6 +1,5 @@
 progressr::handlers("cli")
 
-
 #' Query data from Yahoo finance
 #'
 #' @param .vec A vector with the tickers

@@ -10,7 +10,11 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
     DBI,
+    dplyr,
     glue,
     lubridate,
+    progressr,
+    purrr,
     RPostgres,
-    tidyquant
+    tidyquant,
+    tidyr
