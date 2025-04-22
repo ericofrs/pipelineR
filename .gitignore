@@ -52,3 +52,4 @@ rsconnect/
 renv/
 .DS_Store
 .quarto
+sp500_data.txt
