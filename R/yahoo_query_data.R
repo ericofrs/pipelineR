@@ -16,7 +16,7 @@ progressr::handlers("cli")
 #' yahoo_query_data(tickers, n_stocks_per_batch = 1, .start = "2025-01-15")
 #' }
 yahoo_query_data <- function(.vec,
-                             n_stocks_per_batch = 50,
+                             n_stocks_per_batch = 31,
                              .start,
                              .end = lubridate::today()-1) {
   symbol_list <- split_batch_maxn(.vec, n_stocks_per_batch)
@@ -27,7 +27,7 @@ yahoo_query_data <- function(.vec,
     purrr::imap_dfr(symbol_list, ~ {
       p(message = paste("Batch", .y))
       tidyquant::tq_get(.x, from = .start, to = .end) |>
-        dplyr::mutate(group_id = .y)
+        dplyr::mutate(batch_id = .y)
     })
   })
 

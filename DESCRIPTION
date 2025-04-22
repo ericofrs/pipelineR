@@ -16,5 +16,6 @@ Imports:
     progressr,
     purrr,
     RPostgres,
+    tibble,
     tidyquant,
     tidyr
