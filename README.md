@@ -1,3 +1,8 @@
+<p align="right">
+  <img src="man/figures/logo.png" width="150" />
+</p>
+
+
 # pipelineR
 
 ## Overview
