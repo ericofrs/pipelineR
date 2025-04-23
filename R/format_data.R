@@ -11,7 +11,7 @@
 #' }
 format_data <- function(.data) {
   tidy_data <- .data |>
-    dplyr::select(-adjusted, -group_id) |>
+    dplyr::select(-adjusted, -batch_id) |>
     tidyr::pivot_longer(
       cols = c(open, high, low, close, volume),
       names_to = "metric",
