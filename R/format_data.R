@@ -6,6 +6,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#' format_data(untidy_data)
+#' }
 format_data <- function(.data) {
   tidy_data <- .data |>
     dplyr::select(-adjusted, -group_id) |>

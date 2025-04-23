@@ -7,7 +7,7 @@ progressr::handlers("cli")
 #' @param .start A date "YYYY-MM-DD" for the beginning of the data extraction
 #' @param .end A date "YYYY-MM-DD" for the end of the data extraction
 #'
-#' @returns
+#' @returns A table containing stock data
 #' @export
 #'
 #' @examples
@@ -17,8 +17,8 @@ progressr::handlers("cli")
 #' }
 yahoo_query_data <- function(.vec,
                              n_stocks_per_batch = 31,
-                             .start = lubridate::today()-6,
-                             .end = lubridate::today()-1) {
+                             .start = lubridate::today() - 6,
+                             .end = lubridate::today() - 1) {
   symbol_list <- split_batch_maxn(.vec, n_stocks_per_batch)
 
   result <- progressr::with_progress({

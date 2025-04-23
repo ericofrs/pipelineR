@@ -6,8 +6,8 @@
 \usage{
 yahoo_query_data(
   .vec,
-  n_stocks_per_batch = 50,
-  .start,
+  n_stocks_per_batch = 31,
+  .start = lubridate::today() - 6,
   .end = lubridate::today() - 1
 )
 }
@@ -19,6 +19,9 @@ yahoo_query_data(
 \item{.start}{A date "YYYY-MM-DD" for the beginning of the data extraction}
 
 \item{.end}{A date "YYYY-MM-DD" for the end of the data extraction}
+}
+\value{
+A table containing stock data
 }
 \description{
 Query data from Yahoo finance

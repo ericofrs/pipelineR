@@ -4,14 +4,21 @@
 \alias{insert_new_data}
 \title{Insert new data into the PostgreSQL table}
 \usage{
-insert_new_data(.tidy_data)
+insert_new_data(.tidy_data, con)
 }
 \arguments{
 \item{.tidy_data}{A tidy tibble containing stock market data}
+
+\item{con}{A connection}
 }
 \value{
 A message confirming the insertion or not of the records
 }
 \description{
 Insert new data into the PostgreSQL table
+}
+\examples{
+\dontrun{
+message <- insert_new_data()
+}
 }

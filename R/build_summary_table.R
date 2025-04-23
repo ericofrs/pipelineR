@@ -5,7 +5,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' empty_logs <- build_summar_table()
+#' empty_logs <- build_summary_table()
 #' }
 build_summary_table <- function() {
   pipeline_logs <- tibble::tibble(

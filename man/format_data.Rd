@@ -15,3 +15,8 @@ A tidy tibble with columns symbol, date, metric and value
 \description{
 Format the data
 }
+\examples{
+\dontrun{
+format_data(untidy_data)
+}
+}

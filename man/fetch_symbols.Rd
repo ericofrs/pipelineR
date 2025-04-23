@@ -4,11 +4,19 @@
 \alias{fetch_symbols}
 \title{Fetch tickers}
 \usage{
-fetch_symbols()
+fetch_symbols(con)
+}
+\arguments{
+\item{con}{A connection}
 }
 \value{
 A \code{data.frame} of one column with all symbols
 }
 \description{
 Fetches the tickers from the main SP500 table.
+}
+\examples{
+\dontrun{
+fetch_symbols()
+}
 }

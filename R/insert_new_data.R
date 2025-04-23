@@ -1,13 +1,17 @@
 #' Insert new data into the PostgreSQL table
 #'
 #' @param .tidy_data A tidy tibble containing stock market data
+#' @param con A connection
 #'
 #' @returns A message confirming the insertion or not of the records
 #' @export
 #'
 #' @examples
-insert_new_data <- function(.tidy_data) {
-  # con <- connect_db()
+#' \dontrun{
+#' message <- insert_new_data()
+#' }
+insert_new_data <- function(.tidy_data, con) {
+  con <- con
 
   existing_data <- DBI::dbGetQuery(
     conn = con,

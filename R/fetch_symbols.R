@@ -2,12 +2,17 @@
 #'
 #' Fetches the tickers from the main SP500 table.
 #'
+#' @param con A connection
+#'
 #' @returns A `data.frame` of one column with all symbols
 #' @export
 #'
 #' @examples
-fetch_symbols <- function(){
-  # con <- connect_db()
+#' \dontrun{
+#' fetch_symbols()
+#' }
+fetch_symbols <- function(con){
+  con <- con
   query_symbols <- glue::glue_sql("SELECT DISTINCT symbol
                                     FROM sp500.info
                                     ORDER BY symbol ASC;",

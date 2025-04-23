@@ -3,8 +3,6 @@ factors <- function(n) {
   which(n %% 1:n == 0)
 }
 
-
-
 # Best factor
 best_factor <- function(.vec) {
   valid_factors <- factors(length(.vec))
