@@ -5,6 +5,15 @@ test_that("Log summary table has the correct column names", {
                         "n_rows", "message"))
 })
 
+test_that("build_summary_table() returns a tibble", {
+  summary_table <- build_summary_table()
+  expect_s3_class(summary_table, "tbl_df")
+})
+
+test_that("build_summary_table() returns empty tibble", {
+  summary_table <- build_summary_table()
+  expect_equal(nrow(summary_table), 0)
+})
 
 test_that("Log table has the correct column names", {
   result <- log_summary(.start = "2025-01-01",
