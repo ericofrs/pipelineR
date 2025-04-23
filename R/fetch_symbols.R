@@ -19,6 +19,9 @@ fetch_symbols <- function(con){
                                     .con = con
                                   )
   symbols <- DBI::dbGetQuery(con, query_symbols)
+  if (is.null(symbols)) {
+    stop("No symbols fetched")
+  }
   # DBI::dbDisconnect(con)
   return(symbols$symbol)
 }

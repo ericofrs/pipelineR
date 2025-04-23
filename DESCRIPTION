@@ -1,9 +1,9 @@
 Package: pipelineR
-Title: What the Package Does (One Line, Title Case)
+Title: Fetches stock market data from Yahoo Finance and populates a PostgreSQL database
 Version: 0.0.1.0000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: It provides a complete pipeline for retrieving S&P 500 stock data, transforming it to a tidy format, and maintaining logs of all operations.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -12,10 +12,14 @@ Imports:
     DBI,
     dplyr,
     glue,
-    lubridate,
     progressr,
     purrr,
     RPostgres,
     tibble,
     tidyquant,
     tidyr
+Suggests: 
+    renv,
+    testthat (>= 3.0.0),
+    withr
+Config/testthat/edition: 3

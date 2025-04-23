@@ -6,9 +6,9 @@
 \usage{
 log_summary(
   .user_login = "EriF",
-  .start = lubridate::today() - 6,
-  .end = lubridate::today() - 1,
-  n_stocks_per_batch = 31,
+  .start,
+  .end,
+  .n_stocks_per_batch,
   .symbols,
   .message
 )
@@ -20,7 +20,7 @@ log_summary(
 
 \item{.end}{Optional. A Date for the last day}
 
-\item{n_stocks_per_batch}{Optional. An Integer with the number of ticker per batch}
+\item{.n_stocks_per_batch}{Optional. An Integer with the number of ticker per batch}
 
 \item{.symbols}{A Vector with all the tickers}
 

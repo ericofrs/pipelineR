@@ -4,17 +4,12 @@
 \alias{yahoo_query_data}
 \title{Query data from Yahoo finance}
 \usage{
-yahoo_query_data(
-  .vec,
-  n_stocks_per_batch = 31,
-  .start = lubridate::today() - 6,
-  .end = lubridate::today() - 1
-)
+yahoo_query_data(.vec, .n_stocks_per_batch, .start, .end)
 }
 \arguments{
 \item{.vec}{A vector with the tickers}
 
-\item{n_stocks_per_batch}{An integer that sets the maximum number of tickers per batch}
+\item{.n_stocks_per_batch}{An integer that sets the maximum number of tickers per batch}
 
 \item{.start}{A date "YYYY-MM-DD" for the beginning of the data extraction}
 
@@ -29,6 +24,6 @@ Query data from Yahoo finance
 \examples{
 \dontrun{
 tickers <- c("A", "AAPL", "ABBV")
-yahoo_query_data(tickers, n_stocks_per_batch = 1, .start = "2025-01-15")
+yahoo_query_data(tickers, .n_stocks_per_batch = 1, .start = "2025-01-15")
 }
 }

@@ -4,7 +4,14 @@
 \alias{start_pipeline}
 \title{Start pipeline}
 \usage{
-start_pipeline()
+start_pipeline(.from = Sys.Date() - 7, .to = Sys.Date(), .batch_size = 31)
+}
+\arguments{
+\item{.from}{Optional. Start date}
+
+\item{.to}{Optional. End date}
+
+\item{.batch_size}{Optional. Number of tickers per batch}
 }
 \value{
 Undefined
