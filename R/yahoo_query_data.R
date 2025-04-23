@@ -17,7 +17,7 @@ progressr::handlers("cli")
 #' }
 yahoo_query_data <- function(.vec,
                              n_stocks_per_batch = 31,
-                             .start,
+                             .start = lubridate::today()-6,
                              .end = lubridate::today()-1) {
   symbol_list <- split_batch_maxn(.vec, n_stocks_per_batch)
 

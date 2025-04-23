@@ -7,7 +7,7 @@
 #'
 #' @examples
 insert_new_data <- function(.tidy_data) {
-  con <- connect_db()
+  # con <- connect_db()
 
   existing_data <- DBI::dbGetQuery(
     conn = con,
@@ -26,12 +26,15 @@ insert_new_data <- function(.tidy_data) {
       name = DBI::Id(schema = "student_erico", table = "sp500_data"),
       value = new_data
     )
-
-    cat("Inserted", nrow(new_data), "new records.\n")
+    message <- paste0("Inserted ", nrow(new_data), " new records.")
+    cat(message, "\n")
+    return(message)
   } else {
-    cat("No new records to insert.\n")
+    message <- "No new records to insert."
+    cat(message, "\n")
+    return(message)
   }
 
-  DBI::dbDisconnect(con)
+  # DBI::dbDisconnect(con)
 
 }

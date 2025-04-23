@@ -15,5 +15,4 @@ build_summary_table <- function() {
     status = character(),
     n_rows = integer(),
     message = character())
-  )
 }
