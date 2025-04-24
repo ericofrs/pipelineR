@@ -1,11 +1,12 @@
+url: https://ericofrs.github.io/pipelineR/
 template:
   bootstrap: 5
   bootswatch: sandstone
-
 navbar:
-  title: "pipelineR"
+  title: pipelineR
   left:
-    - text: "Reference"
-      href: reference/index.html
-    - text: "Articles"
-      href: articles/index.html
+  - text: Reference
+    href: reference/index.html
+  - text: Articles
+    href: articles/index.html
+
