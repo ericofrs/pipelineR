@@ -1,3 +1,7 @@
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ericofrs/pipelineR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ericofrs/pipelineR/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 <p align="right">
   <img src="man/figures/logo.png" width="180" />
 </p>
