@@ -6,9 +6,6 @@
   <img src="man/figures/logo.png" width="180" />
 </p>
 
-
-# pipelineR
-
 ## Overview
 
 **pipelineR** is an R package designed to fetch stock market data from Yahoo Finance and populate a PostgreSQL database. It provides a complete pipeline for retrieving S&P 500 stock data, transforming it to a tidy format, and maintaining logs of all operations.
