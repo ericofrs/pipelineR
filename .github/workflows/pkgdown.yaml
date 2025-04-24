@@ -2,7 +2,7 @@
 
 on:
   push:
-    branches: [main]
+    branches: [main, pkgdown]
   pull_request:
   release:
     types: [published]
