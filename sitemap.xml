@@ -1,20 +1,20 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>/404.html</loc></url>
-<url><loc>/LICENSE-text.html</loc></url>
-<url><loc>/LICENSE.html</loc></url>
-<url><loc>/authors.html</loc></url>
-<url><loc>/index.html</loc></url>
-<url><loc>/reference/build_summary_table.html</loc></url>
-<url><loc>/reference/connect_db.html</loc></url>
-<url><loc>/reference/fetch_symbols.html</loc></url>
-<url><loc>/reference/format_data.html</loc></url>
-<url><loc>/reference/index.html</loc></url>
-<url><loc>/reference/insert_new_data.html</loc></url>
-<url><loc>/reference/log_summary.html</loc></url>
-<url><loc>/reference/push_summary_table.html</loc></url>
-<url><loc>/reference/split_batch.html</loc></url>
-<url><loc>/reference/split_batch_maxn.html</loc></url>
-<url><loc>/reference/start_pipeline.html</loc></url>
-<url><loc>/reference/yahoo_query_data.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/404.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/LICENSE-text.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/LICENSE.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/authors.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/index.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/build_summary_table.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/connect_db.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/fetch_symbols.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/format_data.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/index.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/insert_new_data.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/log_summary.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/push_summary_table.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/split_batch.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/split_batch_maxn.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/start_pipeline.html</loc></url>
+<url><loc>https://ericofrs.github.io/pipelineR/reference/yahoo_query_data.html</loc></url>
 </urlset>
 
