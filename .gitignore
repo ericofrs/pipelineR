@@ -52,3 +52,4 @@ rsconnect/
 renv/
 .DS_Store
 sp500_data.txt
+docs
